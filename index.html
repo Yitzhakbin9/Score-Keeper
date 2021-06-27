@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <!-- This is Bulma css framework: -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+    <style>
+      .winner {
+        color: green;
+      }
+      .loser {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  We use the Card component from Bluma framework:  
+          https://bulma.io/documentation/components/card/  -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <!--  put the card in the center  -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://nypost.com/wp-content/uploads/sites/2/2020/04/rock-paper-scissor.jpg?quality=80&strip=all&w=618&h=410&crop=1"
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Score Keeper</p>
+                <button class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <h1 class="title is-1">
+                    <span id="p1Display">0</span> to
+                    <span id="p2Display">0</span>
+                  </h1>
+                  <p class="subtitle">Use the buttons below to keep scores</p>
+                  <label for="playto" class="label is-large is-inline"
+                    >Playing To</label
+                  >
+                  <div class="select is-rounded">
+                    <select id="playTo">
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <!--  'is-primary','is-info','is-danger' = styles of Bulma: 
+                       https://bulma.io/documentation/elements/button/ -->
+                <button
+                  id="p1Button"
+                  class="is-primary button card-footer-item is-large">
+                  +1 Player One
+                </button>
+                <button
+                  id="p2Button"
+                  class="is-info button card-footer-item is-large">
+                  +1 Player Two
+                </button>
+                <button
+                  id="reset"
+                  class="is-danger button card-footer-item is-large">
+                  Reset
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+    <script src="dist/fireworks.js"></script>
+
+  </body>
+</html>
