@@ -7,3 +7,5 @@ Features:
 * Reset button - resets the scores.
 * If you change the goal score, it resets the scores.
 * When someone wins, it changes the colors of the scores.
+
+![Image of score](https://raw.githubusercontent.com/Yitzhakbin9/Score-Keeper/main/score%20keeper.png)
