@@ -1,4 +1,7 @@
 # Score-Keeper
+
+https://yitzhakbin9.github.io/Score-Keeper/
+
 This is a simple score keeper widget in HTML , JavaScript , and Bulma framework for styling.
 This project is from 'The Web Developer Bootcamp' course by Colt Steele on Udemy (Great course btw).
 
